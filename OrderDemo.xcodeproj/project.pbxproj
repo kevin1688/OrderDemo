@@ -14,6 +14,7 @@
 		6616B2142776DF09007B074D /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B2132776DF09007B074D /* OrderModel.swift */; };
 		6616B2162776E1AF007B074D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B2152776E1AF007B074D /* Menu.swift */; };
 		6616B2182776ED3A007B074D /* ShoppingCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B2172776ED3A007B074D /* ShoppingCar.swift */; };
+		66964A8E277AF52900089430 /* OrderMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66964A8D277AF52900089430 /* OrderMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6616B2132776DF09007B074D /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		6616B2152776E1AF007B074D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		6616B2172776ED3A007B074D /* ShoppingCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCar.swift; sourceTree = "<group>"; };
+		66964A8D277AF52900089430 /* OrderMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6616B2072776DC44007B074D /* ContentView.swift */,
 				6616B2152776E1AF007B074D /* Menu.swift */,
 				6616B2172776ED3A007B074D /* ShoppingCar.swift */,
+				66964A8D277AF52900089430 /* OrderMenu.swift */,
 				6616B2132776DF09007B074D /* OrderModel.swift */,
 				6616B2092776DC45007B074D /* Assets.xcassets */,
 				6616B20B2776DC45007B074D /* Preview Content */,
@@ -151,6 +154,7 @@
 				6616B2162776E1AF007B074D /* Menu.swift in Sources */,
 				6616B2182776ED3A007B074D /* ShoppingCar.swift in Sources */,
 				6616B2062776DC44007B074D /* OrderDemoApp.swift in Sources */,
+				66964A8E277AF52900089430 /* OrderMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

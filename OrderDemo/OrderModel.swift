@@ -13,14 +13,20 @@ struct menu:Identifiable,Hashable,Codable {
     var title:String
     var img:String}
 
-struct order:Identifiable,Hashable,Codable {
+struct orderMenu:Identifiable,Hashable,Codable {
     var id = UUID().uuidString
     var menu:menu
     var qauntity:Int
 }
 
+struct order:Identifiable,Hashable,Codable {
+    var id = UUID().uuidString
+    var onOrder:[orderMenu]
+}
+
 class OData: ObservableObject {
     @Published var menus = [menu]()
+    @Published var orderMenus = [orderMenu]()
     @Published var orders = [order]()
     
     init(){
@@ -29,9 +35,26 @@ class OData: ObservableObject {
             menu(title: "banana", img: "Banana"),
             menu(title: "cherry", img: "Cherry"),
         ]
+        
+        orderMenus = [
+            orderMenu(menu: menu(title: "apple", img: "Apple"), qauntity: 1)
+        ]
+        orders = [
+            order(onOrder: orderMenus)
+        ]
+         
     }
     
     func addOrder(value:menu) {
-        orders.append(order(menu: value, qauntity: 1))
+        let isHaveIndex = orderMenus.firstIndex(where: { od in
+            od.menu.title == value.title
+        })
+        
+        if (isHaveIndex != nil) {
+            orderMenus[isHaveIndex!].qauntity += 1
+        }else{
+            orderMenus.append(orderMenu(menu: value, qauntity: 1))
+        }
+        
     }
 }

@@ -23,13 +23,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-struct OrderMenu: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .tabItem {
-                Image(systemName: "note.text")
-            }
-    }
-}
